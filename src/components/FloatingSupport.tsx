@@ -57,14 +57,18 @@ export function FloatingSupport() {
   }, [isOpen]);
 
   const contactOptions = [
-    {
-      name: t.support?.aiAssistant || 'Chat with AI Assistant',
-      icon: Bot,
-      action: openTawkTo,
-      bgColor: 'bg-gradient-to-br from-[#00B7FF] to-[#0090cc]',
-      hoverColor: 'hover:from-[#0090cc] hover:to-[#0070aa]',
-      description: t.support?.aiDescription || 'Instant AI support',
-    },
+{
+  name: t.support?.aiAssistant || 'Chat with AI Assistant',
+  icon: Bot,
+  action: () => {
+    if (typeof window !== 'undefined' && window.Tawk_API) {
+      window.Tawk_API.maximize();
+    }
+  },
+  bgColor: 'bg-gradient-to-br from-[#00B7FF] to-[#0097FF]',
+  hoverColor: 'hover:from-[#0090cc] hover:to-[#0070aa]',
+  description: t.support?.aiDescription || 'Instant AI support'
+},
     {
       name: t.support?.telegram || 'Chat on Telegram',
       icon: Send,
