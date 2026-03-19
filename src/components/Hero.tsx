@@ -100,19 +100,22 @@ export function Hero() {
             { label: t.hero.stats.rebate, value: '92%' },
             { label: t.hero.stats.paidOut, value: '9.2M$+' },
             { label: t.hero.stats.withdrawals, value: '24/7' },
-          ].map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              className="p-6 rounded-xl border border-[#00B7FF]/20 bg-gradient-to-br from-[#00B7FF]/5 to-transparent backdrop-blur-sm"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-            >
-              <div className="p-3 md:p-8 grid grid-cols-3 gap-3 md:gap-6 mx-auto max-w-4xl mt-8 md:mt-16">
-        <div className="p-3 md:p-8 rounded-lg md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
-          <div className="text-2xl md:text-5xl font-bold text-center">92%</div>
-          <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">Highest Rebate in the World</div>
-        </div>
+         <div className="grid grid-cols-3 gap-3 md:gap-6 mt-8 md:mt-16">
+  <div className="p-3 md:p-8 rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+    <div className="text-2xl md:text-5xl font-bold text-center">92%</div>
+    <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">Highest Rebate in the World</div>
+  </div>
+  
+  <div className="p-3 md:p-8 rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+    <div className="text-2xl md:text-5xl font-bold text-center">9.2M$+</div>
+    <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">Paid Out</div>
+  </div>
+  
+  <div className="p-3 md:p-8 rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+    <div className="text-2xl md:text-5xl font-bold text-center">24/7</div>
+    <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">24/7 Instant Withdrawals</div>
+  </div>
+</div>
 
         <div className="p-3 md:p-8 rounded-lg md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
           <div className="text-2xl md:text-5xl font-bold text-center">9.2M$+</div>
