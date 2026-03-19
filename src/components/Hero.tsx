@@ -108,14 +108,23 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
             >
-              <div className="text-4xl bg-gradient-to-r from-[#00B7FF] to-white bg-clip-text text-transparent mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm text-[#BFBFBF]">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+              <div className="p-3 md:p-8 grid grid-cols-3 gap-3 md:gap-6 mx-auto max-w-4xl mt-8 md:mt-16">
+        <div className="p-3 md:p-8 rounded-lg md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+          <div className="text-2xl md:text-5xl font-bold text-center">92%</div>
+          <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">Highest Rebate in the World</div>
+        </div>
+
+        <div className="p-3 md:p-8 rounded-lg md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+          <div className="text-2xl md:text-5xl font-bold text-center">9.2M$+</div>
+          <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">Paid Out</div>
+        </div>
+
+        <div className="p-3 md:p-8 rounded-lg md:rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
+          <div className="text-2xl md:text-5xl font-bold text-center">24/7</div>
+          <div className="text-[10px] md:text-sm text-center mt-1 md:mt-2 text-gray-400 leading-tight">24/7 Instant Withdrawals</div>
+        </div>
       </div>
+
 
       {/* Scroll indicator */}
       <motion.div
