@@ -88,7 +88,29 @@ export function Hero() {
             </motion.a>
           </div>
         </motion.div>
-
+      {/* Video Section */}
+      <motion.div
+        className="mt-12 md:mt-16 max-w-3xl mx-auto px-4"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+      >
+        <div className="relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-xl border border-[#00B7FF]/20 p-1 hover:border-[#00B7FF]/40 transition-all duration-300">
+          <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
+            <iframe 
+              className="absolute top-0 left-0 w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+              title="How Rebatrix Works"
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            />
+          </div>
+        </div>
+        <p className="text-center mt-4 text-sm text-gray-400">
+          See how our automated rebate system works
+        </p>
+      </motion.div>
         {/* Floating stats */}
         <motion.div
           className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto"
