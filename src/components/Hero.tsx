@@ -99,7 +99,7 @@ export function Hero() {
           <div className="relative" style={{ paddingBottom: '56.25%', height: 0 }}>
             <iframe 
               className="absolute top-0 left-0 w-full h-full rounded-xl"
-              src="https://youtu.be/it-yc41Llmw" 
+              src="https://youtu.be/it-yc41Llmw?si=zeEvnYfOpqUUg1Qx" 
               title="How Rebatrix Works"
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
